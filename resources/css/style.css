@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+    
+*:focus {
+    outline: none;
+}
+body {
+    font-family: Arial;
+    background-color: #3498DB;
+    padding: 50px;
+}
+.container {
+    margin: 20px auto;
+    width: 350px;
+}
+
+.login-container {
+    margin: 20px auto;
+    width: 300px;
+}
+
+.container-screen {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px
+}
+
+.container-movie {
+    margin: 20px auto;
+    width: 1200px;
+}
+
+.app-title {
+    text-align: center;
+    color: #777;
+}
+
+.container-form {
+    text-align: center;
+}
+.control-group {
+    margin-bottom: 10px;
+}
+
+input {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+}
+
+input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+}
+
+.btn {
+    border: 2px solid transparent;
+    background: #3498DB;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #2980B9;
+}
+
+.login-link {
+    font-size: 12px;
+    display: block;
+    margin-top: 14px;
+}
+
+.get-errors{
+	background: #fa0000c4;
+	color: #fff;
+	border-color: #54b268;
+	animation: tiendaNew 2.72s ease infinite;
+	transform-origin: 50% 50%;
+	-webkit-transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+	text-align: center;
+	font-size: 13px;
+	padding: 10px;
+	margin-bottom: 15px;
+	clear: both;
+	display: block;
+	width: 100%;
+	-webkit-border-radius: 6px;
+	-moz-border-radis: 6px;
+	border-radius: 6px;
+}
+
+@keyframes tiendaNew{
+	0% { transform:translate(0,0) }
+	4.41177% { transform:translate(5px,0) }
+	8.82353% { transform:translate(0,0) }
+	13.23529% { transform:translate(5px,0) }
+	17.64706% { transform:translate(0,0) }
+	22.05882% { transform:translate(5px,0) }
+	26.47059% { transform:translate(0,0) }
+	100% { transform:translate(0,0) }
+}
+
+.get-errors:hover{
+	background:#fcb530;
+	color: #fff;
+}
+
+.right
+{
+    float: right;
+    margin-top: 30px;
+}
+
+.left
+{
+    float: left;
+}
+
+.movies {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+}
+
+.movies td, .movies th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.movies tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.movies tr:hover {
+    background-color: #ddd;
+}
+
+.movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ddd;
+}
+
+.form-movies {
+    margin-top: 20px;
+    width: 75%;
+}
+
+.submit-movies
+{   
+    margin-top: 40px;
+}
+
+.custom-select {
+    position: relative;
+    width:100px;
+}
+  
+.custom-select select {
+    display: none;
+}
+  
+.select-selected {
+    background-color: #ecf0f1;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(0, 0, 0) transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(0, 0, 0) transparent;
+    top: 8px;
+}
+  
+.select-items div,.select-selected {
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.select-items {
+    position: absolute;
+    background-color: rgba(138, 135, 135, 0.315);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
